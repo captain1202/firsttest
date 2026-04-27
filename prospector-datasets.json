@@ -1,0 +1,20 @@
+{
+  "datasets": [
+    {
+      "search_id": "jYfjZlmF1R3jqIGVA",
+      "search_term": "personal injury lawyer",
+      "location": "Jacksonville, FL",
+      "date_created": "2026-04-27",
+      "total_results": 555,
+      "retrieved_count": 21,
+      "apify_actor": "compass~crawler-google-places",
+      "csv_file": "jacksonville-personal-injury-leads-full.csv",
+      "status": "active"
+    }
+  ],
+  "settings": {
+    "auto_save": true,
+    "retention_days": 90,
+    "max_datasets": 50
+  }
+}
