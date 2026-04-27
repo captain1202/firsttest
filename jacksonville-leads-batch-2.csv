@@ -1,6 +1,6 @@
 Name,Address,Phone,Website,Email,Review_Score,Review_Count,Lead_Score,Category,Notes
 "Hill Law Office, P.L.L.C.","9424 Baymeadows Rd Unit 250, Jacksonville, FL 32256","(904) 299-7997","justiceforyouandyours.com","",2.5,8,Hot,Personal Injury,Very poor rating (2.5 stars) - reputation management needed
-"Cole, Scott & Kissane, P.A.","4686 Sunbeam Rd, Jacksonville, FL 32257","(904) 672-4000","csklegal.com","",3.2,11,Hot,Personal Injury,Below average rating (3.2) - needs improvement
+"Cole, Scott & Kissane, P.A.","4686 Sunbeam Rd, Jacksonville, FL 32257","(904) 672-4000","csklegal.com","tiffany.batten@csklegal.com",3.2,11,Hot,Personal Injury,Below average rating (3.2) - needs improvement - Partner Tiffany Batten 99% confidence
 "Rodney Gregory Law Office","3840 Crown Point Rd B, Jacksonville, FL 32257","(904) 722-2222","gregorylawfirm.net","",3.5,8,Warm,Personal Injury,Below average rating but low review count
 "Michael Naughton, P.A.","12058 San Jose Blvd, Jacksonville, FL 32223","(904) 886-7494","","",3.9,14,Warm,Personal Injury,No website - major opportunity
 "Douglas Law Firm","6100 Greenland Rd # 603, Jacksonville, FL 32258","(800) 705-5457","dhclawyers.com","",4.1,13,Warm,Personal Injury,Low review count for established firm
