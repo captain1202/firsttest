@@ -3,251 +3,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Agentic Bots - Deploy Intelligent Automation in 37 Minutes</title>
+    <title>MPlannerPro - See Your Revenue Growth Plan Free</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); background-attachment: fixed; }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; background: white; box-shadow: 0 0 30px rgba(0,0,0,0.3); }
-        .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 20px; text-align: center; margin: -20px -20px 40px; }
-        .hero h1 { font-size: 2.5em; margin-bottom: 20px; }
-        .hero p { font-size: 1.3em; opacity: 0.9; }
-        h2 { color: #667eea; margin: 40px 0 20px; font-size: 1.8em; }
-        h3 { color: #764ba2; margin: 30px 0 15px; font-size: 1.4em; }
-        .proof-box { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 20px; margin: 20px 0; }
-        .objection-box { background: #fff3e0; border-left: 4px solid #ff9800; padding: 20px; margin: 15px 0; }
-        .cta-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; text-align: center; margin: 40px 0; border-radius: 10px; }
-        .price { font-size: 3em; font-weight: bold; margin: 20px 0; }
-        .button { display: inline-block; background: #ff6b6b; color: white; padding: 20px 40px; font-size: 1.3em; text-decoration: none; border-radius: 5px; margin: 20px 0; font-weight: bold; }
-        .button:hover { background: #ff5252; }
-        .guarantee { background: #f3e5f5; border: 2px solid #9c27b0; padding: 20px; margin: 30px 0; text-align: center; border-radius: 10px; }
-        .timeline { background: #e3f2fd; padding: 20px; margin: 20px 0; border-radius: 5px; }
-        .timeline-item { margin: 15px 0; padding-left: 20px; border-left: 3px solid #2196f3; }
-        ul { margin: 15px 0 15px 30px; }
-        li { margin: 10px 0; }
-        .highlight { background: #fff59d; padding: 2px 6px; }
-        .warning { background: #ffebee; border-left: 4px solid #f44336; padding: 15px; margin: 20px 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background: #0a0f1e;
+            color: #fff;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0a0f1e 0%, #1a1f3e 100%);
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 1px solid #00d9ff;
+        }
+        .eyebrow {
+            color: #00d9ff;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero h1 span {
+            background: linear-gradient(90deg, #00d9ff, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subheadline {
+            font-size: 1.5rem;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+            color: #0a0f1e;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 30px;
+            transition: transform 0.3s;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Sections */
+        .section {
+            padding: 80px 20px;
+            border-bottom: 1px solid #1e293b;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        .section h2 span {
+            color: #00d9ff;
+        }
+        .section p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+        
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .card {
+            background: #141414;
+            border: 1px solid #1e293b;
+            border-radius: 12px;
+            padding: 40px;
+            transition: border-color 0.3s;
+        }
+        .card:hover {
+            border-color: #00d9ff;
+        }
+        .card h3 {
+            color: #00d9ff;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .card p {
+            color: #94a3b8;
+            font-size: 1rem;
+        }
+        
+        /* Guarantee */
+        .guarantee {
+            background: #141414;
+            border: 2px solid #10b981;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        .guarantee h3 {
+            color: #10b981;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Steps */
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .step {
+            text-align: center;
+            padding: 20px;
+            flex: 1;
+            min-width: 200px;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #00d9ff, #10b981);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+            color: #0a0f1e;
+        }
+        .step h4 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .step p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+        
+        /* Footer CTA */
+        .footer-cta {
+            background: linear-gradient(135deg, #1a1f3e 0%, #0a0f1e 100%);
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .footer-cta h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .footer-cta p {
+            font-size: 1.3rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .section h2 { font-size: 1.8rem; }
+            .cards { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="hero">
-            <h1>🤖 AI Agentic Bots</h1>
-            <p>Deploy Intelligent Automation That Works While You Sleep<br>
-            <strong>From Zero to Live in 37 Minutes</strong></p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="eyebrow">FREE Revenue Growth Analysis</div>
+            <h1>See Exactly How to Hit Your <span>Revenue Goal</span> Before Spending a Dollar</h1>
+            <p class="subheadline">Get a custom 12-month marketing plan showing you precisely how to add $100K-$500K to your business. 100% free analysis. Only pay if you decide to execute.</p>
+            <a href="#apply" class="cta-button">Get My Free Analysis →</a>
         </div>
+    </section>
 
-        <h2>The Problem: You're Working Harder Than Your Business</h2>
-        <p>Every day, you wake up to the same grind. Responding to the same questions. Processing the same requests. Handling the same repetitive tasks that eat away at your time, energy, and creativity.</p>
-        
-        <p>You started your business to <strong>build something</strong>, not to become a human API endpoint.</p>
-
-        <p>Meanwhile, your competitors are quietly deploying AI systems that handle customer inquiries, qualify leads, process orders, and nurture relationships—<span class="highlight">24 hours a day, without complaint, without burnout, without asking for a raise.</span></p>
-
-        <h2>The Shift: From Operator to Orchestrator</h2>
-        <p>AI Agentic Bots isn't another chatbot template. It's a complete system for deploying intelligent automation that actually understands context, makes decisions, and takes action.</p>
-
-        <p>We're talking about bots that can:</p>
-        <ul>
-            <li><strong>Qualify leads</strong> in real-time conversations and book appointments directly to your calendar</li>
-            <li><strong>Process customer support</strong> tickets, resolve common issues, and escalate intelligently</li>
-            <li><strong>Handle sales conversations</strong> from first contact to purchase decision</li>
-            <li><strong>Execute workflows</strong> across multiple platforms without human intervention</li>
-            <li><strong>Learn and adapt</strong> from each interaction to improve performance</li>
-        </ul>
-
-        <div class="proof-box">
-            <h3>📊 Real Results from Early Adopters</h3>
-            <p><strong>Marcus T.</strong> deployed his first AI sales bot in 34 minutes. Within 48 hours, it had qualified 23 leads and booked 7 sales calls. "I literally woke up to appointments on my calendar," he told us.</p>
-            
-            <p><strong>Sarah K.</strong> built a customer support bot for her e-commerce store. It now handles 78% of inquiries without human intervention, cutting her support time from 4 hours daily to 45 minutes.</p>
-            
-            <p><strong>The 37-Minute Build:</strong> Our internal testing shows the average first-time user goes from login to live deployment in 37 minutes. Not days. Not weeks. <strong>37 minutes.</strong></p>
+    <!-- Problem Section -->
+    <section class="section">
+        <div class="container">
+            <h2>You're Working Harder Than Your Business</h2>
+            <p>Every day you wake up to the same grind. You're the best at what you do—whether that's fixing roofs, handling legal cases, or keeping homes comfortable—but customers aren't beating down your door.</p>
+            <p>You've tried marketing before. Maybe you ran some Facebook ads. Maybe you hired an agency that charged $3,000 a month and delivered... nothing. Maybe you've been relying on referrals, but they're unpredictable.</p>
+            <p>Here's the brutal truth: <strong>Your competitors have figured out systematic customer acquisition, and you haven't.</strong></p>
+            <p>While you're hoping the phone rings, they're using AI-powered systems to generate qualified leads on autopilot. They're scaling. You're stuck.</p>
         </div>
+    </section>
 
-        <h2>What You Actually Get</h2>
-        <p>This isn't a course teaching you about AI. This is a <strong>deployment system</strong> that gets you live and operational fast.</p>
-
-        <h3>The Complete AI Agentic Bots System:</h3>
-        <ul>
-            <li><strong>Bot Builder Framework</strong> — Pre-configured templates for sales, support, lead gen, and onboarding bots</li>
-            <li><strong>Integration Engine</strong> — Connects to your existing tools: CRM, email, calendar, payment processors, Slack</li>
-            <li><strong>Decision Logic Builder</strong> — Visual workflow creator for complex multi-step automations</li>
-            <li><strong>Training Playbook</strong> — How to teach your bot your brand voice, objection handling, and escalation triggers</li>
-            <li><strong>Deployment Scripts</strong> — Copy-paste code for websites, landing pages, and messaging platforms</li>
-            <li><strong>Analytics Dashboard</strong> — Track conversations, conversions, and bot performance in real-time</li>
-        </ul>
-
-        <h2>The 37-Minute Breakdown: Exactly How This Works</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <strong>Minutes 0-5: Strategy Selection</strong><br>
-                Choose your bot type (sales qualifier, support handler, appointment setter) and connect your core integrations.
+    <!-- Solution Section -->
+    <section class="section">
+        <div class="container">
+            <h2>What If You Could <span>See the Path</span> Before Walking It?</h2>
+            <p>Imagine knowing—<em>really knowing</em>—exactly what it would take to add $200,000 to your revenue this year. Not guessing. Not hoping. Knowing.</p>
+            <p>Imagine having a complete roadmap showing you:</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>📊 Your Marketing Gap</h3>
+                    <p>Exactly where you're losing customers to competitors and why. We'll analyze your website, reviews, ads, SEO, and everything in between.</p>
+                </div>
+                <div class="card">
+                    <h3>🎯 Your Revenue Opportunity</h3>
+                    <p>How much revenue you're leaving on the table right now, and the specific steps to capture it.</p>
+                </div>
+                <div class="card">
+                    <h3>📈 Your 12-Month Roadmap</h3>
+                    <p>Month-by-month breakdown of exactly what marketing activities will hit your revenue goal, with projected ROI for each.</p>
+                </div>
             </div>
-            <div class="timeline-item">
-                <strong>Minutes 5-15: Conversation Design</strong><br>
-                Use the template library to map your conversation flow. Customize responses to match your brand voice.
+            <p style="margin-top: 40px;">This isn't a generic template. This is a custom analysis of YOUR business, YOUR market, YOUR competitors. Powered by MPlannerPro AI technology that normally costs $2,000+.</p>
+            <p><strong>And it's 100% free.</strong></p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container">
+            <h2>How the <span>Free Analysis</span> Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Tell Us Your Goal</h4>
+                    <p>"I want to add $200K in revenue" or "I want 50 new customers per month." Whatever your target, we'll work backwards from it.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>We Analyze Everything</h4>
+                    <p>Our AI analyzes your market, competitors, current marketing, and opportunity. This takes 24-48 hours.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>You Get Your Plan</h4>
+                    <p>Custom 12-month roadmap showing exactly how to hit your goal, with monthly investment based on services needed.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Decide to Proceed</h4>
+                    <p>Love the plan? We'll execute it for you. Not interested? Keep the analysis. No obligation, no hard sell.</p>
+                </div>
             </div>
-            <div class="timeline-item">
-                <strong>Minutes 15-25: Logic & Actions</strong><br>
-                Build decision trees. Set up conditional responses. Connect to your CRM, calendar, and payment systems.
+        </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="section">
+        <div class="container">
+            <h2>Your Free Analysis <span>Includes</span></h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>🔍 Complete Marketing Audit</h3>
+                    <p>Website conversion analysis, review monitoring, competitor intelligence, SEO assessment, ad performance review, and gap identification.</p>
+                </div>
+                <div class="card">
+                    <h3>💰 Revenue Opportunity Sizing</h3>
+                    <p>Exactly how much revenue you're missing out on, where it's coming from, and what it will take to capture it.</p>
+                </div>
+                <div class="card">
+                    <h3>📋 12-Month Growth Roadmap</h3>
+                    <p>Month-by-month breakdown of marketing activities, expected leads, projected revenue, and investment required.</p>
+                </div>
+                <div class="card">
+                    <h3>📊 ROI Projections</h3>
+                    <p>Realistic projections based on your market data, not guesswork. See your expected return before spending a dollar.</p>
+                </div>
+                <div class="card">
+                    <h3>💵 Custom Investment Plan</h3>
+                    <p>Monthly investment range based on YOUR revenue goal and the services required to achieve it. No hidden fees.</p>
+                </div>
+                <div class="card">
+                    <h3>🎯 Competitor Analysis</h3>
+                    <p>See exactly what your top competitors are doing, where they're winning, and how to beat them.</p>
+                </div>
             </div>
-            <div class="timeline-item">
-                <strong>Minutes 25-30: Testing & Refinement</strong><br>
-                Run test conversations. Adjust responses. Verify integrations are working correctly.
+        </div>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="section">
+        <div class="container">
+            <div class="guarantee">
+                <h3>🛡️ The "No Risk" Guarantee</h3>
+                <p style="color: #fff; font-size: 1.2rem; margin-top: 15px;">Get your free analysis. Review your custom plan. If you don't think it's worth at least $5,000, keep it anyway. No charge. No obligation. No hard feelings.</p>
+                <p style="color: #94a3b8; margin-top: 20px;">Only pay if you decide to have us execute the plan. Your monthly investment depends entirely on your revenue goal and the marketing services needed to achieve it.</p>
             </div>
-            <div class="timeline-item">
-                <strong>Minutes 30-37: Deploy & Activate</strong><br>
-                Generate embed code. Add to your site. Turn on traffic. Your bot is now live and working.
+        </div>
+    </section>
+
+    <!-- Who This Is For -->
+    <section class="section">
+        <div class="container">
+            <h2>Who This Is <span>For</span></h2>
+            <p><strong>This is for you if:</strong></p>
+            <p>✅ You're a local service business (contractor, lawyer, dentist, HVAC, roofer, etc.)</p>
+            <p>✅ You want to add $100K-$500K+ in annual revenue</p>
+            <p>✅ You're tired of unpredictable lead flow</p>
+            <p>✅ You've been burned by marketing agencies before</p>
+            <p>✅ You want to see a plan BEFORE committing money</p>
+            <br>
+            <p><strong>This is NOT for you if:</strong></p>
+            <p>❌ You're looking for a "get rich quick" scheme</p>
+            <p>❌ You're not willing to invest in growth</p>
+            <p>❌ You want results without putting in the work</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <h2>Frequently Asked <span>Questions</span></h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Why is this free?</h3>
+                    <p>We're confident that once you see your custom plan, you'll want us to execute it. If not, no problem. The analysis is yours to keep.</p>
+                </div>
+                <div class="card">
+                    <h3>How long does the analysis take?</h3>
+                    <p>24-48 hours. Our AI analyzes your market, competitors, and opportunity, then generates your custom roadmap.</p>
+                </div>
+                <div class="card">
+                    <h3>What if I don't like the plan?</h3>
+                    <p>You owe nothing. Keep the analysis. Use it yourself. Give it to another agency. We only win if you win.</p>
+                </div>
+                <div class="card">
+                    <h3>How much will it cost if I proceed?</h3>
+                    <p>Your monthly investment depends on your revenue goal and the marketing services required. We'll show you the exact range in your analysis.</p>
+                </div>
+                <div class="card">
+                    <h3>Is there a contract?</h3>
+                    <p>No long-term contracts. Month-to-month based on your custom plan.</p>
+                </div>
+                <div class="card">
+                    <h3>What makes this different?</h3>
+                    <p>Most agencies charge $2,000+ just for an analysis. We give it free because our AI makes it scalable. You see the plan before spending a dollar.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <h2>Who This Is For (And Who Should Pass)</h2>
-        <p><strong>This is for you if:</strong></p>
-        <ul>
-            <li>You're a solopreneur or small team drowning in repetitive tasks</li>
-            <li>You sell services, courses, consulting, or digital products</li>
-            <li>You have traffic but struggle with conversion and follow-up</li>
-            <li>You want to scale without hiring a team</li>
-            <li>You're tired of watching competitors automate while you grind</li>
-        </ul>
-
-        <p><strong>This is NOT for you if:</strong></p>
-        <ul>
-            <li>You expect AI to magically build your entire business overnight</li>
-            <li>You're not willing to spend 37 minutes setting up the system</li>
-            <li>You don't have any offer, traffic, or business model yet</li>
-        </ul>
-
-        <h2>Objection Domination: Every Concern Addressed</h2>
-
-        <div class="objection-box">
-            <strong>"I don't have time to learn another tool"</strong><br>
-            The entire system is designed for deployment in 37 minutes. Not 37 hours. Not 37 days. Most users are live and operational before their coffee gets cold.
+    <!-- Final CTA -->
+    <section class="footer-cta" id="apply">
+        <div class="container">
+            <h2>See Your Revenue Growth Plan <span style="color: #00d9ff;">Free</span></h2>
+            <p>Stop guessing. Start knowing. Get your custom 12-month marketing roadmap showing exactly how to hit your revenue goal.</p>
+            <a href="#" class="cta-button">Get My Free Analysis →</a>
+            <p style="margin-top: 30px; color: #64748b; font-size: 0.9rem;">100% free. No obligation. No credit card required.</p>
         </div>
-
-        <div class="objection-box">
-            <strong>"I've bought AI tools before and they didn't work"</strong><br>
-            Most AI tools give you a blank canvas and wish you luck. AI Agentic Bots gives you proven templates, pre-built workflows, and a step-by-step deployment system. You're not starting from scratch—you're customizing a working system.
-        </div>
-
-        <div class="objection-box">
-            <strong>"I'm not technical enough"</strong><br>
-            If you can copy and paste, you can deploy an AI bot. The integration system uses simple API connections and webhook URLs. No coding required for 90% of deployments.
-        </div>
-
-        <div class="objection-box">
-            <strong>"AI is overhyped"</strong><br>
-            Fair concern. But here's the difference: This isn't general-purpose AI. These are task-specific agents designed for concrete business outcomes—qualifying leads, booking appointments, handling support. They don't need to be sentient. They need to be effective.
-        </div>
-
-        <div class="objection-box">
-            <strong>"What if my traffic doesn't convert?"</strong><br>
-            The bot doesn't create traffic—it converts the traffic you already have. If you're getting visitors but not sales, this fixes the conversion gap. If you have zero traffic, fix that first.
-        </div>
-
-        <div class="objection-box">
-            <strong>"I don't know what niche to target"</strong><br>
-            The system includes deployment templates for 12 proven niches: coaches, consultants, agencies, e-commerce, SaaS, real estate, fitness, finance, and more. Pick one. Customize. Deploy.
-        </div>
-
-        <div class="objection-box">
-            <strong>"Payment processing seems complicated"</strong><br>
-            We include step-by-step Stripe integration. Most users have payments flowing within the 37-minute window. If you can create a Stripe account, you can accept bot-driven payments.
-        </div>
-
-        <div class="objection-box">
-            <strong>"I don't have an audience"</strong><br>
-            Start with your bot on your website. Even 10 daily visitors becomes a conversation. Those conversations become leads. Those leads become customers. Your bot works 24/7, so every visitor gets handled perfectly, even at 3 AM.
-        </div>
-
-        <div class="objection-box">
-            <strong>"I'm not creative with copywriting"</strong><br>
-            The templates include proven conversation scripts. You customize with your specific details—your offer, your pricing, your FAQs. The framework handles the persuasion architecture.
-        </div>
-
-        <h2>The Identity Transformation</h2>
-        <p>Right now, you're the operator. The doer. The person who has to be present for things to happen.</p>
-
-        <p><strong>After deploying AI Agentic Bots, you become:</strong></p>
-        <ul>
-            <li><strong>The Orchestrator</strong> — You design systems that work without you</li>
-            <li><strong>The Asset Builder</strong> — Every bot you deploy is a 24/7 employee that never sleeps</li>
-            <li><strong>The Speed Operator</strong> — While competitors plan, you launch</li>
-            <li><strong>The AI-Native Entrepreneur</strong> — You leverage intelligence at scale</li>
-        </ul>
-
-        <h2>Future Visualization: Your New Morning Routine</h2>
-        <p><strong>Scene 1:</strong> You wake up. Check your phone. Three new qualified leads booked appointments overnight. Your bot handled their questions, addressed their objections, and scheduled them directly to your calendar. You didn't lift a finger.</p>
-
-        <p><strong>Scene 2:</strong> It's Tuesday afternoon. While your competitors are in meetings, you're testing a new offer. You deploy a bot variation in 20 minutes. By Thursday, you have conversion data. By Friday, you're optimizing. They're still writing proposal documents.</p>
-
-        <p><strong>Scene 3:</strong> A customer has a complex support question at 11 PM. Your bot resolves it in 3 minutes. They leave a 5-star review about your "amazing customer service." You were asleep.</p>
-
-        <h2>Why This Isn't Like Other AI Tools</h2>
-        <p><strong>ChatGPT prompts?</strong> Those give you text. We give you deployed systems.</p>
-        <p><strong>AI courses?</strong> Those teach you theory. We give you working bots.</p>
-        <p><strong>Chatbot builders?</strong> Those make simple Q&A bots. We build intelligent agents that take action.</p>
-
-        <p>AI Agentic Bots is the difference between <em>knowing</em> AI is powerful and <em>profiting</em> from AI daily.</p>
-
-        <h2>The Urgency: Pricing Increases Soon</h2>
-        <div class="warning">
-            <strong>Founder Pricing Active Now</strong><br>
-            This is the lowest price AI Agentic Bots will ever be offered. As we add more templates, more integrations, and more advanced features, the price increases.
-            
-            <p>Current early adopters are locking in at founder rates. Future buyers will pay significantly more for the same system.</p>
-        </div>
-
-        <h2>Your Investment</h2>
-        <div class="cta-box">
-            <h2>AI Agentic Bots Complete System</h2>
-            <div class="price">$97</div>
-            <p>One-time payment. Lifetime access. All future updates included.</p>
-            
-            <a href="#purchase" class="button">DEPLOY MY AI BOT NOW</a>
-            
-            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.9;">
-                🔒 Secure checkout via Stripe<br>
-                Immediate access after purchase
-            </p>
-        </div>
-
-        <div class="guarantee">
-            <h3>🛡️ 7-Day "Bot Live or Money Back" Guarantee</h3>
-            <p>Deploy your AI bot within 7 days. If you don't have it live and working, email us for a full refund. No questions. No hassle.</p>
-            <p>We're taking all the risk because we know this system works. The only question is whether you'll implement it.</p>
-        </div>
-
-        <h2>What Happens After You Purchase</h2>
-        <ol>
-            <li><strong>Immediate Access:</strong> You'll receive login credentials and system access within 2 minutes</li>
-            <li><strong>Quick-Start Video:</strong> 12-minute overview showing the exact 37-minute deployment process</li>
-            <li><strong>Template Library:</strong> Choose your bot type and customize with your details</li>
-            <li><strong>Integration Setup:</strong> Connect your tools (Stripe, calendar, CRM, email)</li>
-            <li><strong>Deploy:</strong> Go live and start automating</li>
-        </ol>
-
-        <h2>The Choice</h2>
-        <p>You can keep doing things the old way. Handling every inquiry personally. Being present for every conversation. Trading time for money until you burn out.</p>
-
-        <p>Or you can deploy intelligent automation that works while you sleep, scales without hiring, and converts visitors into customers 24/7.</p>
-
-        <p><strong>The tools are ready. The templates are proven. The only variable is you.</strong></p>
-
-        <div class="cta-box">
-            <h2>Join the AI-Native Entrepreneurs</h2>
-            <p>Stop grinding. Start orchestrating.</p>
-            <div class="price">$97</div>
-            <a href="#purchase" class="button">GET AI AGENTIC BOTS NOW</a>
-            <p style="margin-top: 20px; font-size: 0.9em;">
-                ⚡ Founder pricing ends soon
-            </p>
-        </div>
-
-        <p style="text-align: center; margin-top: 40px; color: #666;">
-            Questions? Email support@aiagenticbots.com<br>
-            © 2026 AI Agentic Bots. All rights reserved.
-        </p>
-    </div>
+    </section>
 </body>
 </html>
